@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    min-height: 100dvh;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+
+/*navbar*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #faead46b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+    }
+
+#menu-toggle {
+    display: none;
+    }
+
+
+.nav-links{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.logo-navbar,  .logo-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-navbar img, .logo-footer img{
+    padding-right:13px ;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+
+.nav-links a, .footer a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ad7f00bb;
+}
+
+.contenuto{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+/*header*/
+.header {
+    position: relative;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 100px;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    z-index: -1;
+    
+}
+
+.content, .freccia{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
+}
+
+.freccia{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%);
+}
+
+/*contenuto-home*/
+.home-chi-siamo-contenuto{
+    display: flex;
+    max-width: 65%;
+    margin: 0 auto 50px;
+}
+
+.home-chi-siamo{
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 1px 1px 10px #0000005b;
+    margin-bottom: 100px;
+    background-color: #faead46b;
+}
+
+.team img{
+    border-radius: 50%;
+    border: 5px solid #faead4;
+    box-shadow: 1px 1px 10px #0000005b;
+    margin-right: 20px;
+}
+
+hr {
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #000000;
+    border: none;
+    margin: 30px auto 30px;
+}
+
+
+/* Sezione Prodotti Home*/
+.home-prodotti-contenuto-left, .home-prodotti-contenuto-right {
+    width: 100%;
+    padding: 50px 10%;
+}
+
+.home-prodotto-item-left, .home-prodotto-item-right {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-prodotto-item-left img, .home-prodotto-item-right img {
+    height: 15vw;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.home-prodotti-contenuto-left{
+    background-color: #faead46b;
+}
+
+
+
+/* box-orari */
+
+.orari table{
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.orari{
+    margin: 100px auto 150px;
+    width: 65%; /* Evita margini laterali fissi per una migliore adattabilità */
+    max-width: 600px; /* Limita la larghezza su schermi grandi */
+    text-align: center; /* Centra il titolo */
+}
+
+.box-orari{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: solid;
+    border-color: #DEDEDE;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.box-orari hr {
+    width: 85%;
+    display: block;
+    height: 1px;
+    background-color: #DEDEDE;
+    border: none;
+    margin: 15px auto 15px;
+}
+
+.box-orari th {
+    text-align: left;
+    padding: 8px;
+    font-weight: normal;
+}
+
+.box-orari td {
+    text-align: left;
+    padding: 8px;
+}
+
+
+
+/*footer*/
+.footer {
+    display: block;
+    background-color: #faead46b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100px;
+    margin-bottom: 0;
+}
+
+.footer img {
+    height: 40px;
+}
+
+.footer h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer p {
+    margin: 0;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.logo-footer{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+/*contattaci*/
+.contenuto-contatti{
+    width: 80vw;
+    margin: auto;
+}
+
+.contenuto-contatti h1{
+    margin: auto;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.dove-siamo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.orari-contatti, .info, .mail-telefono{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    background-color: #faead46b;
+    padding: 25px;
+}
+
+.orari-contatti h2, .orari-contatti h3{
+    margin-bottom: 10px;
+}
+
+.mappa iframe{
+    height: 100%;
+    width: 100%;
+}
+
+
+.mail-telefono{
+    background-color: #faead46b;
+}
+
+.contatti{
+    margin-bottom: 100px;
+}
+
+.mail-telefono a{
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.mail-telefono a:hover{
+    background-color: #c5baab85;
+}
+
+
+.prodotti{
+    margin-top: 50px;
+}
+
+.griglia{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    width: 75vw;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.prodotto img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+/*responsive*/
+@media screen and (max-width: 600px) {
+    .navbar .nav-links {
+    display: none;
+    width: 100%;
+    }
+    .navbar .nav-links li {
+    display: block;
+    }
+    #menu-toggle:checked + .hamburger + .nav-links {
+    display: block;
+    }
+    .hamburger {
+    display: block;
+    }
+    .logo-navbar img{
+        display: none;
+    }
+
+    .footer{
+        display: block;
+        text-align: center;
+
+    }
+
+    .footer p{
+        display: block;
+        width: 60%;
+        margin-left: 50%;
+        transform: translate(-50%);
+
+    }
+
+    .home-prodotto-item-left, .home-prodotto-item-right{
+        flex-direction: column;
+    }
+
+    .home-prodotto-item-left img, .home-prodotto-item-right img{
+        display: none;
+    }
+
+    .home-chi-siamo-contenuto{
+        flex-direction: column;
+    }
+
+    
+}
+
+@media screen and (max-width: 800px) {
+    .orari {
+        width: 90%;
+    }
+
+    .dove-siamo{
+        display: block;
+    }
+}
+
+
